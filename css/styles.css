@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;400;500;600;700&family=Raleway:wght@200;400;600&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+}
+
+/* General Styles */
+.Container {
+    display: flex;
+    flex-direction: column;
+    margin: 1em 60px;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo img{
+    width: 300px; /* Ancho deseado */
+    height: auto;
+
+}
+
+/* Header Styles */
+.cabeceraPrincipal {
+    background-color: #3527A5;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.2em;
+    /* Remove fixed height */
+}
+
+/* Dashboard Menu Styles */
+.menuDB {
+    position: relative;
+    display: inline-block;
+    width: 300px;
+}
+
+.cuentaDropdown1 {
+    display: none;
+    position: absolute;
+    background-color: #3527A5;
+    /*box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);*/
+    border-radius: 10px;
+    z-index: 1;
+    width: 270px;
+    height: 550px;
+}
+
+.cuentaDropdown1 ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.cuentaDropdown1 li {
+    padding: 25px 20px;
+    text-align: center;
+}
+
+.cuentaDropdown1 a, .menuDB i {
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    padding: 10px;
+}
+
+.cuentaDropdown1 a:hover {
+    background-color: #58FFFF;
+    color: #3527A5;
+    font-weight: 600;
+    border-radius: 5px;
+}
+
+/* Estilo para el menú de navegación */
+.menu nav{
+    margin-right: 30px;
+}
+
+.menu nav a {
+    color: #fff; 
+    text-decoration: none; 
+    padding: 15px 50px; 
+    transition: background-color 0.3s, color 0.3s;
+    border-radius: 25px;
+}
+
+.menu nav a:hover,
+.menu nav a:focus,
+.menu nav a:active,
+.menu nav a.current {
+    color: #3527A5; 
+    background-color: #58FFFF; 
+    font-weight: 600;
+    border-radius: 25px;
+}
+
+/*Chatbot styles*/
+.chat{
+    display: flex;
+    justify-content: center;
+}
+
+.chat img {
+    padding: 1em 200px;
+}
+
+.bot {
+    width: 40%;
+    height: 60vh;
+    
+}
